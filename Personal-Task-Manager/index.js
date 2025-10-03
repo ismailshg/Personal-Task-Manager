@@ -148,7 +148,6 @@ const calculateTasksPercentage = (expenseArr) => {
 
 calculateTasksPercentage(expenseArr);
 
-
 // Task: 4 =>
 // Display tasks created in my birth month =>
 
@@ -168,9 +167,10 @@ const saveTasksToStorage = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("Tasks saved in storage.");
-    }, 1*100);
+    }, 1 * 100);
   });
 };
+
 saveTasksToStorage()
   .then((tasksData) => {
     console.log(tasksData);
